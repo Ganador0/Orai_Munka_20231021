@@ -1,0 +1,74 @@
+
+nav{
+    grid-area: n;
+}
+#fotartalom{
+    grid-area: ft;
+    border: 3px double black;
+    border-top: 0px;
+    text-align: center;
+}
+#bejelentkezes{
+    grid-area: b;
+    text-align: center;
+}
+#Jobb{
+    grid-area: j;
+    text-align: right;
+}
+#Bal{
+    grid-area: ba;
+}
+#keszetette{
+    grid-area: k;
+    border-top: 1px dashed black;
+    text-align: right;
+    
+}
+#osztaly{
+    grid-area: o;
+    text-align: right;
+}
+#elerhetosegek{
+    grid-area: e;
+    border: solid 1px black;
+    text-align: left;
+    
+}
+#balt2{grid-area: bt;
+border: 1px dashed black;
+}
+#menu{grid-area: me;}
+#jobbt2{grid-area: jt;}
+#fot2{grid-area: fot;
+border-top: 3px double black;
+border-bottom: 3px double black;}
+#elerh2{grid-area: el;}
+#kesz2{grid-area: ke;}
+#oszt2{grid-area: osz;
+border-left: dotted;}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas: 
+    'n n ft b b'
+    'n n ft ba j'
+    'k o e e e'
+    ;
+
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'bt bt me me jt'
+    'bt bt fot fot fot'
+    'el el ke ke osz'
+    ;
+}
+main *{
+    padding: 5px;
+}
+
